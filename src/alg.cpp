@@ -1,7 +1,6 @@
 // Copyright 2025 NNTU-CS
 #include <cstdint>
 #include "alg.h"
-using namespace std;
 
 unsigned int collatzLen(uint64_t num) {
     unsigned int len = 1;
@@ -25,7 +24,7 @@ uint64_t collatzMaxValue(uint64_t num) {
         if (num > maxVal)
             maxVal = num;
     }
-    return maxVal;
+    return (unsigned int)maxVal;
 }
 
 unsigned int seqCollatz(unsigned int *maxlen,
